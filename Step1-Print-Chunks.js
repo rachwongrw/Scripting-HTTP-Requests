@@ -9,7 +9,7 @@ https.get(requestOptions, function (response) {
   response.setEncoding('utf8');
 
   response.on('data', function(data) {
-    console.log('Chunk Received. Length: ' + data.length);
+    console.log('Chunk Received. Length: ' + data);
   });
 
   response.on('end', function() {
