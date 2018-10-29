@@ -30,6 +30,7 @@ function getAndPrintHTMLChunks () {
 
 /* Steps
 1. use https lib to GET a given url
-2. function should console.log each chunk of data
+2. set encoding to utf8
+3. function should console.log each chunk of data
 
 */
