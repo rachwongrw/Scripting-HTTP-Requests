@@ -5,7 +5,10 @@ var requestOptions = {
   path: '/http-examples/step1.html'
 };
 
-https.get(requestOptions, function (response) {
+
+
+function getAndPrintHTMLChunks () {
+  https.get(requestOptions, function (response) {
   response.setEncoding('utf8');
 
   response.on('data', function(data) {
@@ -18,15 +21,9 @@ https.get(requestOptions, function (response) {
 
 });
 
-
-function getAndPrintHTMLChunks () {
-
-
-// Add code here
-
-
 }
 
+getAndPrintHTMLChunks();
 
 /* Steps
 1. use https lib to GET a given url
