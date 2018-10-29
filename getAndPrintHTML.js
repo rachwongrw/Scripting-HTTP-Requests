@@ -9,10 +9,10 @@ var requestOptions = {
 https.get(requestOptions, function (response) {
   response.setEncoding('utf8');
 
-  var body = '';
+  var body = [];
 
   response.on('data', function(chunk) {
-    body += chunk;
+    body.push(chunk);
     console.log('Chunk Received.' + chunk);
   });
 
